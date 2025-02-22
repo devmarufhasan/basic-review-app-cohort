@@ -8,15 +8,15 @@
   <body>
     <section
       aria-label="Customer Review"
-      class="h-dvh bg-gradient-to-r from-indigo-500 from-0% via-sky-500 via-30% to-emerald-500 to-90% p-[50px] flex flex-wrap"
+      class="min-h-dvh bg-gradient-to-r from-indigo-500 from-0% via-sky-500 via-30% to-emerald-500 to-90% p-[50px] flex flex-wrap gap-5"
     >
-      <div class="basis-[50%]">
+      <div class="w-[500px] grow">
         <form class="flex flex-col gap-4 items-start" id="reviewForm">
           <textarea
             name="review_message"
             id="review_message"
-            rows="6"
-            class="block p-2.5 w-full rounded-lg border border-gray-300 text-sm text-gray-900 bg-gray-50 focus:outline-none"
+            rows="8"
+            class="block p-4 w-full rounded-lg border border-gray-300 text-sm text-gray-900 bg-gray-50 focus:outline-none"
             placeholder="Write your message"
           ></textarea>
           <input type="hidden" name="given_star" id="given_star" value="0" />
@@ -31,7 +31,7 @@
           </button>
         </form>
       </div>
-      <div class="basis-[50%]"></div>
+      <div class="w-[500px] grow flex flex-col gap-4" id="review_list"></div>
     </section>
     <script type="module" src="/src/main.js"></script>
   </body>

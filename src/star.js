@@ -1,3 +1,5 @@
+import showReview from "./show_review";
+
 let star_review = document.getElementById("star-rating");
 let review_form = document.getElementById("reviewForm");
 
@@ -39,7 +41,8 @@ review_form.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(review_form);
   let dataObject = Object.fromEntries(data.entries());
-  console.log(dataObject);
+  showReview(dataObject);
   review_form.reset();
   resetStars();
 });
+showReview({});
