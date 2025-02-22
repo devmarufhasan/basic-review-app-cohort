@@ -6,7 +6,33 @@
     <title>Review Submition</title>
   </head>
   <body>
-    <div class="text-3xl font-bold underline">Hello</div>
+    <section
+      aria-label="Customer Review"
+      class="h-dvh bg-gradient-to-r from-indigo-500 from-0% via-sky-500 via-30% to-emerald-500 to-90% p-[50px] flex flex-wrap"
+    >
+      <div class="basis-[50%]">
+        <form class="flex flex-col gap-4 items-start" id="reviewForm">
+          <textarea
+            name="review_message"
+            id="review_message"
+            rows="6"
+            class="block p-2.5 w-full rounded-lg border border-gray-300 text-sm text-gray-900 bg-gray-50 focus:outline-none"
+            placeholder="Write your message"
+          ></textarea>
+          <input type="hidden" name="given_star" id="given_star" value="0" />
+
+          <div id="star-rating" class="flex items-center"></div>
+
+          <button
+            type="submit"
+            class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+          >
+            Submit Review
+          </button>
+        </form>
+      </div>
+      <div class="basis-[50%]"></div>
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
