@@ -3,6 +3,8 @@ import showReview from "./show_review";
 let star_review = document.getElementById("star-rating");
 let review_form = document.getElementById("reviewForm");
 
+console.log("Hello");
+
 new Array(5).fill(0).map(() => {
   star_review.innerHTML += `
     <svg class="w-5 h-5 ms-1 text-gray-300 fill-gray-300 star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
